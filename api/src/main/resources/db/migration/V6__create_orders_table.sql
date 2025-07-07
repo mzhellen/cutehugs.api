@@ -1,0 +1,7 @@
+CREATE TABLE orders(
+	id BIGINT AUTO_INCREMENT PRIMARY KEY,
+	total_price DECIMAL,
+	order_status ENUM('PENDING', 'PAYED', 'FINISHED', 'SENT', 'DELIVERED'),
+	user_id BIGINT,
+	FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE
+);

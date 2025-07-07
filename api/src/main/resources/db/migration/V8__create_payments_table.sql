@@ -1,0 +1,8 @@
+CREATE TABLE payments(
+	id BIGINT AUTO_INCREMENT PRIMARY KEY,
+	amount DECIMAL,
+	payment_method ENUM('CREDIT_CARD', 'DEBIT_CARD', 'DEPOSIT', 'PIX'),
+	payment_status ENUM('PENDING', 'PROCESSING', 'REJECTED', 'APPROVED'),
+	order_id BIGINT,
+	FOREIGN KEY(order_id) REFERENCES orders(id) ON DELETE CASCADE
+);
