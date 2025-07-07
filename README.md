@@ -2,6 +2,7 @@
 Building an e-commerce, my first Spring Boot project.
 
 Inserts para testes: 
+
   INSERT INTO fullcycle.products (name,price,description,stock,imageURL) VALUES
 	 ('Urso de Pelúcia Gigante',2000,'Urso de pelúcia macio de 1,5m, ideal para presentes românticos.',10,'https://m.media-amazon.com/images/I/71mHmJaaKcL.jpg'),
 	 ('Coelhinho Rosa',800,'Coelho de pelúcia rosa com orelhas longas e laço no pescoço.',25,'https://http2.mlstatic.com/D_NQ_NP_752827-MLB78616677318_082024-O-coelho-de-brinquedo-de-pelucia-coelho-infantil-eletrico.webp'),
